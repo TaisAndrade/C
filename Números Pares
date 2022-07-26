@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h> 
+
+int main(){
+ int numero; 
+ int par = 2;
+
+ printf("Digite um número: ");
+ scanf("%d", &numero);
+
+   while (par <= numero){
+    printf("%d ", par);
+    par += 2;
+   }
+
+ return 0;
+}
