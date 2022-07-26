@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<stdlib.h> 
+
+void peso_ideal(char sexo, float altura){
+  float peso_ideal; 
+
+  switch(sexo){ 
+    case 'f': 
+     peso_ideal = altura * altura; 
+    break; 
+    
+    case 'm': 
+     peso_ideal = altura * altura; 
+    break;
+     
+    default: 
+      printf("Erro! Tente novamente"); 
+    break; 
+  } 
+
+ return peso_ideal;
+} 
+
+int main(){ 
+  char sexo; 
+  float altura; 
+  float peso; 
+
+   printf("Calculadora de IMC \n"); 
+   printf("Informe o sexo: "); 
+   scanf("%c", &sexo); 
+
+   printf("Informe a altura(metros): "); 
+   scanf("%.2f", &altura); 
+
+   peso = peso_ideal(sexo, altura); 
+
+   printf("Seu peso ideal é: %.2f \n", peso); 
+
+ return 0;
+
+}
