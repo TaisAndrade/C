@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<stdlib.h> 
+
+struct cadastro {
+  char nome[15];
+  int idade;
+  int telefone;
+  char endereco[15];
+};
+ 
+void pontos(){
+ printf("********************");
+ printf("\n");
+}
+
+int main(){
+ 
+  struct cadastro cliente;
+
+   printf("Informe seu nome: ");
+   fgets(cliente.nome, 15, stdin);
+
+   printf("Informe sua idade: ");
+   scanf("%d", &cliente.idade);
+
+   printf("Informe seu telefone: ");
+   scanf("%d", &cliente.telefone);
+
+   printf("Informe seu endereço: ");
+   fgets(cliente.endereco, 15, stdin);
+
+
+   printf("\n SEUS DADOS \n");
+   pontos();
+   printf("NOME %s ", cliente.nome);
+   printf("IDADE %d \n", cliente.idade);
+   printf("CONTATO %d \n", cliente.telefone);
+   printf("ENDEREÇO %s \n", cliente.endereco);
+
+ return 0;
+}
